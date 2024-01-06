@@ -6,24 +6,34 @@ body {
 
 textarea {
   background: transparent;
-  border: none;
+  border: 1px dashed black;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
+  border-right: 1px solid black;
   padding: 10px;
 }
 
-header {
-  background-color: transparent;
+.navbar {
+  position: fixed;
+  width: 100%;
 }
 
-.title {
+.jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-image: url("../images/sunny-day.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-  padding: 60px
+  height: 300px;
+  padding: 80px
+}
+
+.container {
+  padding-bottom: 60px;
+  padding-top: 30px;
 }
 
 .description {
@@ -42,9 +52,11 @@ header {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: rgb(190, 190, 190);
+  border-top: 1px solid #000000;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   color: #000000;
-  border-top: 1px dashed #000000;
 }
 
 .past {
@@ -66,8 +78,8 @@ header {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: #ffc000;
+  color: black;
 }
 
 .saveBtn i:hover {
@@ -77,7 +89,7 @@ header {
 
 footer {
   text-align: center;
-  background-color: transparent;
+  background-color: rgb(190, 190, 190);
   color: black;
   border-radius: 0;
   padding: 10px;

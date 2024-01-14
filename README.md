@@ -3,7 +3,7 @@
 
 ## Description
 
-The task was to create a simple calendar application that allows a user to save events for each hour of the day. The app should the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time
+The task was to create a simple calendar application that allows a user to save events for each hour of the day. The app uses the Moments.js library instead of Day.js to work with time and date, as it was more convenient when displaying ordinal numbers for the date display.
 
 
 ### Tasks Completed
@@ -13,6 +13,8 @@ The task was to create a simple calendar application that allows a user to save 
 * Time blocks for standard business hours created.
  
 * Each time block colour-coded based on past, present, and future when viewed.
+
+* User is able to enter event when time block is clicked.
  
 * User events saved in local storage when save button is clicked.
 
@@ -25,7 +27,7 @@ The task was to create a simple calendar application that allows a user to save 
 
 Deployed website: (https://lianna87.github.io/Lianna-Calendar-App/)
 
-Code repository:(https://github.com/Lianna87/Lianna-Calendar-App)
+Code repository: (https://github.com/Lianna87/Lianna-Calendar-App)
 
 
 #### Usage

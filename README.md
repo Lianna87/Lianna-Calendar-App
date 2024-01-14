@@ -1,87 +1,40 @@
 # Lianna-Calendar-App: Work Day Scheduler
 
-## Your Task
 
-The task was to create a simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Description
 
-You'll need to use the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+The task was to create a simple calendar application that allows a user to save events for each hour of the day. The app should the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time
 
-## User Story
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+### Tasks Completed
 
-## Acceptance Criteria
-
-The app should:
-
-* Display the current day at the top of the calender when a user opens the planner.
+* Current day and time displayed at the top of the calender when planner opened.
  
-* Present time blocks for standard business hours when the user scrolls down.
+* Time blocks for standard business hours created.
  
-* Color-code each time block based on past, present, and future when the time block is viewed.
+* Each time block colour-coded based on past, present, and future when viewed.
  
-* Allow a user to enter an event when they click a time block
+* User events saved in local storage when save button is clicked.
 
-* Save the event in local storage when the save button is clicked in that time block.
+* User events removed from local storage when delete button is clicked.
 
-* Persist events between refreshes of a page
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
+* Saved events persist between page refreshes.
 
 
-## Grading Requirements
+### Links
 
-This homework is graded based on the following criteria: 
+Deployed website: (https://lianna87.github.io/Lianna-Calendar-App/)
 
-### Technical Acceptance Criteria: 40%
+Code repository:(https://github.com/Lianna87/Lianna-Calendar-App)
 
-* Satisfies all of the above acceptance criteria plus the following:
 
-  * Uses a date utility library to work with date and time
+#### Usage
 
-### Deployment: 32%
+The webpage can be viewed in a traditional desktop web browser, table or phone once deployed. 
 
-* Application deployed at live URL
 
-* Application loads with no errors
+#### Screenshots
 
-* Application GitHub URL submitted
+![Calendar-App image 1](assets/images/screenshots/Screenshot1.png)
 
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+![Calendar-App image 2](assets/images/screenshots/Screenshot2.png)

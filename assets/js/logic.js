@@ -25,3 +25,15 @@ $(".plan").each(function(){
     var hourKey = $(this).attr("id")
     $(this).val(localStorage.getItem(hourKey))
 })
+
+//Variable for delete button
+const deleteBtn = $(".deleteBtn");
+
+// remove text from local storgae
+deleteBtn.on("click", function() {
+    var hourKey = $(this).siblings(".plan").attr("id")
+    localStorage.removeItem(hourKey)
+    $(this).siblings(".plan").val("")
+})
+
+

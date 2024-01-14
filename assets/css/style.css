@@ -14,9 +14,12 @@ textarea {
   padding: 10px;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
+h1 {
+  margin: 10px;
+}
+
+p {
+  line-height: 160%;
 }
 
 .jumbotron {
@@ -28,7 +31,9 @@ textarea {
   border-radius: 0;
   border-bottom: 10px solid black;
   height: 300px;
-  padding: 80px
+  padding: 80px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .container {
@@ -99,10 +104,4 @@ footer {
   color: black;
   border-radius: 0;
   padding: 30px;
-}
-
-.footerText {
-  line-height: 200%;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }

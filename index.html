@@ -16,14 +16,6 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-nav">
-      <div class="container-fluid">
-          <a href="#"><img src="./assets/images/logo-gold-fill.png" height="55px;" width="60px;"></a>
-      </div>
-    </nav>
-  </header>
-
-  <section>
     <div class="jumbotron py-5">
       <div class="jumbotron-container text-center">
         <h1 class="display-3">Work Day Scheduler</h1>
@@ -32,91 +24,91 @@
         <p id="currentTime" class="lead"></p>
       </div>
     </div>
-  </section>
+  </header>
   
   <!-- Timeblocks -->
   <div class="container">
     <!-- 7AM -->
     <div class="row time-block" id="7">
       <div class="col-1 hour pt-2">07:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour7"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 8AM -->
     <div class="row time-block" id="8">
       <div class="col-1 hour pt-2">08:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour8"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 9AM -->
     <div class="row time-block" id="9">
       <div class="col-1 hour pt-2">09:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour9"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 10AM -->
     <div class="row time-block" id="10">
       <div class="col-1 hour pt-2">10:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour10"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 11AM -->
     <div class="row time-block" id="11">
       <div class="col-1 hour pt-2">11:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour11"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 12PM -->
     <div class="row time-block" id="12">
       <div class="col-1 hour pt-2">12:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour12"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 1PM -->
     <div class="row time-block" id="13">
       <div class="col-1 hour pt-2">13:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour13"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 2PM -->
     <div class="row time-block" id="14">
       <div class="col-1 hour pt-2">14:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour14"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 3PM -->
     <div class="row time-block" id="15">
       <div class="col-1 hour pt-2">15:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour15"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 4PM -->
     <div class="row time-block" id="16">
       <div class="col-1 hour pt-2">16:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour16"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 5PM -->
     <div class="row time-block" id="17">
       <div class="col-1 hour pt-2">17:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour17"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
     <!-- 6PM -->
     <div class="row time-block" id="18">
       <div class="col-1 hour pt-2">18:00</div>
-      <textarea class="col-9 plan"></textarea>
+      <textarea class="col-9 plan" id="hour18"></textarea>
       <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
       <button class="col-1 deleteBtn"><i class="fas fa-trash"></i></button>
     </div>
@@ -124,8 +116,10 @@
   </div>
 
   <footer>
-    <h6>By Lianna Thomas-Forbes</h6>
-    <p>&copy; 2024 The TF Group, Ltd.</p>
+    <div class="container-fluid">
+      <a href="#"><img src="./assets/images/logo-gold-fill.png" height="55px;" width="60px;"></a>
+    </div>
+    <p class="footerText">&copy; 2024 The TF Group, Ltd.</p>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

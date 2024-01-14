@@ -45,7 +45,7 @@ function timeBlockColor() {
     if(rowHour < currentHour) {
         $(this).addClass("past")
     }
-    else if(rowHour===currentHour) {
+    else if(rowHour === currentHour) {
         $(this).addClass("present")
     }
     else {

@@ -21,7 +21,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-image: url("../images/sunny-day.jpeg");
+  background-image: url("../images/sunny-day.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
@@ -98,9 +98,11 @@ footer {
   background-color: rgb(190, 190, 190);
   color: black;
   border-radius: 0;
-  padding: 20px;
+  padding: 30px;
 }
 
 .footerText {
   line-height: 200%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

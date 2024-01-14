@@ -1,8 +1,23 @@
-body {
+@font-face {
+  font-family: Pacifico-Regular;
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Futura-Book-Font;
+  src: url("../fonts/Futura-Book-Font.ttf");
+}
+
+:root {
+  --main-text: Pacifico-Regular;
+  --text: Futura-Book-Font;
+}
+
+/* body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-}
+} */
 
 textarea {
   background: transparent;
@@ -15,11 +30,21 @@ textarea {
 }
 
 h1 {
-  margin: 10px;
+  font-family: var(--main-text);
+  font-size: 200px;
+  margin: 20px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: var(--text);
+  line-height: 150%;
 }
 
 p {
-  line-height: 160%;
+  font-family: var(--text);
+  font-size: 20px;
+  line-height: 120%;
 }
 
 .jumbotron {
@@ -29,7 +54,7 @@ p {
   background-repeat: no-repeat;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
   height: 300px;
   padding: 80px;
   width: 100%;
@@ -98,10 +123,19 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
+.deleteBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
 footer {
   text-align: center;
   background-color: rgb(190, 190, 190);
   color: black;
   border-radius: 0;
   padding: 30px;
+}
+
+.logo {
+  padding: 10px;
 }

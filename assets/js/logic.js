@@ -36,4 +36,24 @@ deleteBtn.on("click", function() {
     $(this).siblings(".plan").val("")
 })
 
+// colour code time block to reflect past, present or future
+function timeBlockColor() {
+    var currentHour = dayjs().hour()
+    
+    $(".time-block").each(function(){
+    var rowHour = parseInt($(this).attr("id"))
+    if(rowHour < currentHour) {
+        $(this).addClass("past")
+    }
+    else if(rowHour===currentHour) {
+        $(this).addClass("present")
+    }
+    else {
+        $(this).addClass("future")
+    }
+    })
+}
+timeBlockColor()
+
+
 
